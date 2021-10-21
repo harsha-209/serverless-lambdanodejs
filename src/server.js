@@ -1,0 +1,23 @@
+const express = require('express');
+const app = express();
+
+const port = process.env.PORT || 8000;
+const baseUrl = `http://localhost:${port}`;
+
+
+app.get('/', (req, res) => {
+   res.status(200).send('hello world!, where is harshad,please come out man');
+});
+
+
+
+module.exports = app;
+
+
+
+
+
+#// Server
+#app.listen(port, () => {
+#   console.log(`Listening on: http://localhost:${port}`);
+#});
